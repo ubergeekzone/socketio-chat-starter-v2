@@ -72,4 +72,4 @@ io.of(/[A-Za-z]/).on("connection", (socket) => {
   
 });
 
-httpServer.listen(7000);
+httpServer.listen(process.env.PORT || 7000);
